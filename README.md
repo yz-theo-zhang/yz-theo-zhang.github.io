@@ -2,6 +2,15 @@
 
 This repository is design 
 
+## Local development
+
+Run `npm install` and `npm run dev` from this directory (`mywebsite/`),
+not its parent directory. Install application dependencies here as well so
+React and React Router resolve the same React installation.
+
+Open the URL printed by Vite. The home page is at `/` and the API test page
+is at `/test`.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
