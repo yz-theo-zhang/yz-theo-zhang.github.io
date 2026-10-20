@@ -5,7 +5,7 @@ import Labs from './components/Labs/Labs'
 import Footer from './components/Footer/Footer'
 import SkipLink from './components/ui/SkipLink'
 import Test from './components/Test'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 function Home() {
   return (<>
@@ -22,12 +22,12 @@ function Home() {
 export default function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/test' element={<Test />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
   )
 }
